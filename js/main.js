@@ -19,10 +19,11 @@ for (let i = 0; i < arrayComp.length; i++) {
     HTMLrowcontainer.innerHTML += `<div class="col-2 fs-1 text-center">${arrayComp[i]}</div>`
 }
 
-
 setTimeout(() => {
     HTMLrowcontainer.innerHTML = ''
+}, 2990);
 
+setTimeout(() => {
     for (let i = 0; i < arrayComp.length; i++) {
         arrayUsr.push(parseInt(prompt('inserire numeri visti fino ad ora')))
     }
@@ -36,7 +37,7 @@ setTimeout(() => {
     }
 
     HTMLrowcontainer.innerHTML +=`<h1 class="text-center">Hai indovinato correttamente ${arrayCorr.length} numeri e sono:</h1>`
-    
+
     for (let i = 0; i < arrayCorr.length; i++) {
         HTMLrowcontainer.innerHTML += `<div class="col-2 fs-1 text-center">${arrayCorr[i]}</div>`
     }
